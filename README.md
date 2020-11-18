@@ -8,10 +8,16 @@ Searchable Spinner is a dialog spinner with the search feature which allows to s
 ![Alt text](https://github.com/miteshpithadiya/SearchableSpinner/blob/master/searchablespinnerlibrary/src/main/res/nobleltevzwLMY47XMeditab02192016201518.gif "Searchable Spinner")
 
 # Gradle
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+    
     dependencies {
-        ...
-        compile 'com.toptoche.searchablespinner:searchablespinnerlibrary:1.3.1'
-    }
+	        implementation 'com.github.SatyamBansal:SearchableSpinner:0.1'
+	}
 
 # Usage
     <com.toptoche.searchablespinnerlibrary.SearchableSpinner
@@ -22,22 +28,9 @@ Searchable Spinner is a dialog spinner with the search feature which allows to s
     searchableSpinner.setPositiveButton("OK");
     
 # Changelog
- * <b>1.3.1</b>
-    * Bug fixes.
- * <b>1.3.0</b>
-    * Added hint feature.
-    * Removed the transparent black view appearing while typing.
-    * Added a new feature for text changed listener.
- * <b>1.2.0</b>
-    * Prevented crashing when changing the orientation when the dialog is visible on screen (Issue #7).
-    * Data now getting refreshed on setting the adapter again (Issue #6).
- * <b>1.1.0</b>
-    * New Feature to set the text of the title.
-    * New Feature to set the text of the positive button as well as set a click listener on that button.
- * <b>1.0.2</b>
-    * Resolved the multidex issue.
- * <b>1.0.0</b>
-    * Initial Release
+
+ * <b>0.1</b>
+    * Add Custom Filter for in text search
 
 # License
 
